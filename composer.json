@@ -1,0 +1,20 @@
+{
+    "name": "tminich/test2",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "gabrielbull/websocket-client": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "tminich",
+            "email": "tobias.minich@planet-itservices.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Test\\": "src"
+        }
+    }
+}
