@@ -3,16 +3,13 @@
 namespace Test\Classes;
 
 
-use Test\Classes\Concerns\MyTrait;
+use Test\Classes\MyNamespace\TestClass;
 
 class MyClass {
-    use MyTrait {
-        test as protected traitTest;
-    }
-
-    public static function test(): void
+    public function test(): void
     {
-        static::traitTest();
+        $x = new TestClass();
+        Handler::test();
     }
 
 
